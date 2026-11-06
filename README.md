@@ -43,7 +43,7 @@ AI 개발작업을 위한 workflow 와 templates (prompts, skills, references) �
 ```
 - 프롬프트: 보관 필요없음 
 
-### 5) 메모리뱅크 (Local skill)
+### 5) 메모리뱅크 workflow (Local skill)
 - 작업 진행시 참고할 문서, 따라야할 지침, 진행과정 및 의사결정사항 기록, 작업 완료 기준, 검증 결과 등의 지침을 따르고 기록하기 위함
  - Read: 작업 전에 먼저 읽어야 할 문서
  - Summary: 현재 상태를 짧게 요약
@@ -51,14 +51,14 @@ AI 개발작업을 위한 workflow 와 templates (prompts, skills, references) �
  - Update: 검증결과 와 다음 작업기록
 - 직접 만들거나 $skill-creator 사용
 ```
- $skill-creator <memory-bank 생성 프롬프트 문서>
+ $skill-creator <memory-bank-workflow 생성 프롬프트 문서>
 ```
 - 프롬프트: ./prompt/skill-creator-memory-bank.md
 
 ### 6) 작업진행
 - 지금까지 정리한 요구사항, 디자인, 작업지침 대로 개발작업 수행 
 ```
- $memory-bank 작업지침대로 개발을 진행해줘
+ $memory-bank-workflow 작업지침대로 개발을 진행해줘
 ```
 
 ### 7) AGENT.md (CLAUDE.md) 갱신
@@ -71,7 +71,7 @@ AI 개발작업을 위한 workflow 와 templates (prompts, skills, references) �
 ### *) 레퍼런스 문서
 ```
 /Reference/memory-bank-workflow/
-  - requrest.md
+  - request.md
   - ui-ux-pro-max.md
   - skill-creator-memory-bank.md
 ```
