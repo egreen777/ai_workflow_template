@@ -68,10 +68,20 @@ AI 개발작업을 위한 workflow 와 templates (prompts, skills, references) �
  추가 기능 구현 및 수정이 필요하면 $memory-bank 참고하여 진행할 수 있도록 추가해줘
 ```
 
+### 8) 이미지 생성 (선택)
+- 마케팅 이미지 와 비디오 만들기 
+- Codex의 $imagegen skill 사용 (기본 설치되어있음)
+- 주의: image 생성시에는 반드시 xhigh 를 써야 품질좋은 이미지가 나온
+```
+ $imagegen <create-image 생성 프롬프트 문서>
+```
+- 프롬프트: ./prompt/create-image.md
+
 ### *) 레퍼런스 문서
 ```
 /Reference/memory-bank-workflow/
   - request.md
   - ui-ux-pro-max.md
   - skill-creator-memory-bank.md
+  - create-image.md
 ```
